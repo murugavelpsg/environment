@@ -2,7 +2,6 @@
 cp /tmp/icfb-workflow-engine.jar /opt/icfb/workflow-engine/
 cp /tmp/icfb.war /opt/tomcat/webapps/icfb.war
 cp /tmp/icfb-cloud-providers.jar /opt/tomcat/icfb-libs/endorsed/delegates
-ps -ef | grep messaging | grep -v grep | awk '{print $2}' | xargs kill -9
 ps -ef | grep workflow | grep -v grep | awk '{print $2}' | xargs kill -9
 ps -ef | grep tomcat | grep -v grep | awk '{print $2}' | xargs kill -9
 sleep 2
